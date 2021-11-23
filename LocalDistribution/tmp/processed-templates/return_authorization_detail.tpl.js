@@ -3,7 +3,7 @@ define('return_authorization_detail.tpl', ['Handlebars','Handlebars.CompilerName
 
   return "					<p class=\"return-authorization-detail-header-info-from\">\n						<span class=\"return-authorization-detail-header-info-from-label\">\n							"
     + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(alias1,"Created from:",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":19,"column":7},"end":{"line":19,"column":36}}}))
-    + " \n						</span>\n"
+    + "\n						</span>\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showCreatedFromLink") : depth0),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.program(4, data, 0),"data":data,"loc":{"start":{"line":21,"column":6},"end":{"line":27,"column":13}}})) != null ? stack1 : "")
     + "					</p>\n";
 },"2":function(container,depth0,helpers,partials,data) {
@@ -37,9 +37,9 @@ define('return_authorization_detail.tpl', ['Handlebars','Handlebars.CompilerName
 
   return "				<div class=\"return-authorization-detail-comments-row\">\n					<div class=\"return-authorization-detail-comments\">\n						<p>"
     + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Comments:",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":85,"column":9},"end":{"line":85,"column":34}}}))
-    + "</p>\n					\n							<blockquote>"
+    + "</p>\n\n							<blockquote>"
     + alias3((compilerNameLookup(helpers,"breaklines")||(depth0 && compilerNameLookup(depth0,"breaklines"))||alias2).call(alias1,((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"memo") : stack1),{"name":"breaklines","hash":{},"data":data,"loc":{"start":{"line":87,"column":19},"end":{"line":87,"column":44}}}))
-    + "</blockquote>\n						\n					</div>\n				</div>\n";
+    + "</blockquote>\n\n					</div>\n				</div>\n";
 },"14":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
 
@@ -61,11 +61,11 @@ define('return_authorization_detail.tpl', ['Handlebars','Handlebars.CompilerName
     + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Amount",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":110,"column":96},"end":{"line":110,"column":118}}}))
     + "</th>\n								</thead>\n\n\n								<tbody data-view=\"Invoices.Collection\"></tbody>\n\n								<tfoot>\n								<tr>\n								<td class=\"return-authorization-detail-creditmemo-accordion-body-container-payment-total\" colspan=\"3\">\n									<p>\n										<span class=\"return-authorization-detail-creditmemo-accordion-body-container-payment-total-label\">"
     + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Applied Subtotal: ",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":120,"column":108},"end":{"line":120,"column":142}}}))
-    + "</span> \n										<span class=\"return-authorization-detail-creditmemo-accordion-body-container-payment-subtotal-value\">"
+    + "</span>\n										<span class=\"return-authorization-detail-creditmemo-accordion-body-container-payment-subtotal-value\">"
     + alias3(alias4(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"amountpaid_formatted") : stack1), depth0))
     + "</span>\n									</p>\n									<p>\n										<span class=\"return-authorization-detail-creditmemo-accordion-body-container-payment-total-label\">"
     + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Remaining subtotal: ",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":124,"column":108},"end":{"line":124,"column":144}}}))
-    + "</span> \n										<span class=\"return-authorization-detail-creditmemo-accordion-body-container-payment-total-value-remaining\">"
+    + "</span>\n										<span class=\"return-authorization-detail-creditmemo-accordion-body-container-payment-total-value-remaining\">"
     + alias3(alias4(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"amountremaining_formatted") : stack1), depth0))
     + "</span>\n									</p>\n								</td>\n								</tr>\n								</tfoot>\n							</table>\n";
 },"17":function(container,depth0,helpers,partials,data) {
@@ -129,7 +129,7 @@ define('return_authorization_detail.tpl', ['Handlebars','Handlebars.CompilerName
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showCreatedFrom") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":16,"column":4},"end":{"line":29,"column":11}}})) != null ? stack1 : "")
     + "				<p class=\"return-authorization-detail-header-info-return-date\">\n					"
     + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Date:",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":31,"column":5},"end":{"line":31,"column":26}}}))
-    + " \n					<span class=\"return-authorization-detail-header-info-return-date-value\">"
+    + "\n					<span class=\"return-authorization-detail-header-info-return-date-value\">"
     + alias3(alias4(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"trandate") : stack1), depth0))
     + "</span>\n				</p>\n				<p class=\"return-authorization-detail-header-info-amount\">\n					"
     + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Amount: <span class=\"return-authorization-detail-header-info-amount-value\">$(0)</span>",((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"summary") : stack1)) != null ? compilerNameLookup(stack1,"total_formatted") : stack1),{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":35,"column":5},"end":{"line":35,"column":137}}}))
@@ -137,7 +137,7 @@ define('return_authorization_detail.tpl', ['Handlebars','Handlebars.CompilerName
     + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Status:",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":41,"column":6},"end":{"line":41,"column":29}}}))
     + "\n					</span>\n					<span class=\"return-authorization-detail-header-info-status-value\">\n						"
     + alias3(alias4(((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"status") : stack1)) != null ? compilerNameLookup(stack1,"name") : stack1), depth0))
-    + "\n					</span>\n				</p>\n			</div>\n		</div>\n	</div>\n\n	<div class=\"return-authorization-detail-row\" name=\"return-content-layout\">\n		<div class=\"return-authorization-detail-content-col\">\n\n			<div class=\"return-authorization-detail-accordion-divider\">\n				<div class=\"return-authorization-detail-accordion-head\">	\n					<a href=\"#\" class=\"return-authorization-detail-head-toggle "
+    + "\n					</span>\n				</p>\n			</div>\n		</div>\n	</div>\n\n	<div class=\"return-authorization-detail-row\" name=\"return-content-layout\">\n		<div class=\"return-authorization-detail-content-col\">\n\n			<div class=\"return-authorization-detail-accordion-divider\">\n				<div class=\"return-authorization-detail-accordion-head\">\n					<a href=\"#\" class=\"return-authorization-detail-head-toggle "
     + alias3(((helper = (helper = compilerNameLookup(helpers,"initiallyCollapsedArrow") || (depth0 != null ? compilerNameLookup(depth0,"initiallyCollapsedArrow") : depth0)) != null ? helper : alias2),(typeof helper === alias5 ? helper.call(alias1,{"name":"initiallyCollapsedArrow","hash":{},"data":data,"loc":{"start":{"line":56,"column":64},"end":{"line":56,"column":91}}}) : helper)))
     + "\" data-toggle=\"collapse\" data-target=\"#return-products\" aria-expanded=\"true\" aria-controls=\"return-products\">\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"linesLengthGreaterThan1") : depth0),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.program(8, data, 0),"data":data,"loc":{"start":{"line":57,"column":6},"end":{"line":61,"column":13}}})) != null ? stack1 : "")
@@ -163,7 +163,7 @@ define('return_authorization_detail.tpl', ['Handlebars','Handlebars.CompilerName
     + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Subtotal",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":153,"column":5},"end":{"line":153,"column":29}}}))
     + "\n					<span class=\"return-authorization-detail-summary-subtotal-items\">\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"linesitemsNumberGreaterThan1") : depth0),{"name":"if","hash":{},"fn":container.program(19, data, 0),"inverse":container.program(21, data, 0),"data":data,"loc":{"start":{"line":155,"column":6},"end":{"line":159,"column":13}}})) != null ? stack1 : "")
-    + "					</span>\n				</p>\n				\n"
+    + "					</span>\n				</p>\n\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showDiscountTotal") : depth0),{"name":"if","hash":{},"fn":container.program(23, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":163,"column":4},"end":{"line":170,"column":11}}})) != null ? stack1 : "")
     + "\n				<p class=\"return-authorization-detail-summary-grid-float\">\n					<span class=\"return-authorization-detail-summary-amount-tax\">\n						"
     + alias3(alias4(((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"summary") : stack1)) != null ? compilerNameLookup(stack1,"taxtotal_formatted") : stack1), depth0))
@@ -184,4 +184,4 @@ define('return_authorization_detail.tpl', ['Handlebars','Handlebars.CompilerName
     + "\n					</a>\n				</div>\n\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isCancelable") : depth0),{"name":"if","hash":{},"fn":container.program(29, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":212,"column":4},"end":{"line":216,"column":11}}})) != null ? stack1 : "")
     + "			</div>\n	</div>\n</div>\n\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'return_authorization_detail'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'return_authorization_detail'; return template;});

@@ -1,0 +1,2 @@
+<div class="blog-page-banner"><div class="text-content" data-cms-area="blog_cms_area_1" data-cms-area-filters="path"></div></div>
+<div class="blog-page-list" data-cms-area="blog_cms_area_2" data-cms-area-filters="path"></div>

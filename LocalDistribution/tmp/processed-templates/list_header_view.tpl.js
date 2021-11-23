@@ -4,7 +4,7 @@ define('list_header_view.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], f
   return "	<div class=\"list-header-view\" data-type=\"accordion\">\n		<div class=\"list-header-view-accordion\" data-action=\"accordion-header\">\n\n			<div class=\"list-header-view-accordion-link\">"
     + container.escapeExpression(((helper = (helper = compilerNameLookup(helpers,"headerMarkup") || (depth0 != null ? compilerNameLookup(depth0,"headerMarkup") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"headerMarkup","hash":{},"data":data,"loc":{"start":{"line":5,"column":48},"end":{"line":5,"column":64}}}) : helper)))
     + "</div>\n"
-    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showHeaderExpandable") : depth0),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":6,"column":3},"end":{"line":71,"column":10}}})) != null ? stack1 : "")
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showHeaderExpandable") : depth0),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":6,"column":3},"end":{"line":76,"column":10}}})) != null ? stack1 : "")
     + "		</div>\n	</div>\n";
 },"2":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3=container.escapeExpression, alias4="function";
@@ -23,6 +23,7 @@ define('list_header_view.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], f
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"sorts") : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":43,"column":5},"end":{"line":58,"column":12}}})) != null ? stack1 : "")
     + "\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"filters") : depth0),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":60,"column":5},"end":{"line":68,"column":12}}})) != null ? stack1 : "")
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showSearchPO") : depth0),{"name":"if","hash":{},"fn":container.program(12, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":69,"column":5},"end":{"line":73,"column":12}}})) != null ? stack1 : "")
     + "				</div>\n			</div>\n";
 },"3":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
@@ -89,34 +90,40 @@ define('list_header_view.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], f
     + alias4(((helper = (helper = compilerNameLookup(helpers,"name") || (depth0 != null ? compilerNameLookup(depth0,"name") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data,"loc":{"start":{"line":64,"column":132},"end":{"line":64,"column":140}}}) : helper)))
     + "</option>\n";
 },"12":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "						<label class=\"list-header-view-filters po_filter\">\n							<input type=\"text\" name=\"filter_by_po\" class=\"list-header-view-accordion-body-select\" value=\""
+    + container.escapeExpression(((helper = (helper = compilerNameLookup(helpers,"searchPO") || (depth0 != null ? compilerNameLookup(depth0,"searchPO") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"searchPO","hash":{},"data":data,"loc":{"start":{"line":71,"column":100},"end":{"line":71,"column":112}}}) : helper)))
+    + "\" placeholder=\"Search by PO#\"/><i></i><div name=\"filter_by_po_reset\">×</div>\n						</label>\n";
+},"14":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "	<div class=\"list-header-view-select-all\">\n		<label class=\"list-header-view-select-all-label\" for=\"select-all\">\n"
-    + ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"unselectedLength") : depth0),{"name":"if","hash":{},"fn":container.program(13, data, 0),"inverse":container.program(15, data, 0),"data":data,"loc":{"start":{"line":79,"column":3},"end":{"line":83,"column":10}}})) != null ? stack1 : "")
+    + ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"unselectedLength") : depth0),{"name":"if","hash":{},"fn":container.program(15, data, 0),"inverse":container.program(17, data, 0),"data":data,"loc":{"start":{"line":84,"column":3},"end":{"line":88,"column":10}}})) != null ? stack1 : "")
     + "		</label>\n	</div>\n";
-},"13":function(container,depth0,helpers,partials,data) {
-    return "				<input type=\"checkbox\" name=\"select-all\" id=\"select-all\" data-action=\"select-all\">"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Select All ($(0))",(depth0 != null ? compilerNameLookup(depth0,"collectionLength") : depth0),{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":80,"column":86},"end":{"line":80,"column":136}}}))
-    + "\n";
 },"15":function(container,depth0,helpers,partials,data) {
-    return "				<input type=\"checkbox\" name=\"select-all\" id=\"select-all\" data-action=\"unselect-all\" checked>"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Unselect All ($(0))",(depth0 != null ? compilerNameLookup(depth0,"collectionLength") : depth0),{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":82,"column":96},"end":{"line":82,"column":148}}}))
+    return "				<input type=\"checkbox\" name=\"select-all\" id=\"select-all\" data-action=\"select-all\">"
+    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Select All ($(0))",(depth0 != null ? compilerNameLookup(depth0,"collectionLength") : depth0),{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":85,"column":86},"end":{"line":85,"column":136}}}))
     + "\n";
 },"17":function(container,depth0,helpers,partials,data) {
+    return "				<input type=\"checkbox\" name=\"select-all\" id=\"select-all\" data-action=\"unselect-all\" checked>"
+    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Unselect All ($(0))",(depth0 != null ? compilerNameLookup(depth0,"collectionLength") : depth0),{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":87,"column":96},"end":{"line":87,"column":148}}}))
+    + "\n";
+},"19":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "	<div class=\"list-header-view-paginator\">\n		<div data-view=\"GlobalViews.Pagination\"></div>\n"
-    + ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"showCurrentPage") : depth0),{"name":"if","hash":{},"fn":container.program(18, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":91,"column":2},"end":{"line":93,"column":9}}})) != null ? stack1 : "")
+    + ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"showCurrentPage") : depth0),{"name":"if","hash":{},"fn":container.program(20, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":96,"column":2},"end":{"line":98,"column":9}}})) != null ? stack1 : "")
     + "	</div>\n";
-},"18":function(container,depth0,helpers,partials,data) {
+},"20":function(container,depth0,helpers,partials,data) {
     return "			<div data-view=\"GlobalViews.ShowCurrentPage\"></div>\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showHeader") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":74,"column":7}}})) != null ? stack1 : "")
+  return ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showHeader") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":79,"column":7}}})) != null ? stack1 : "")
     + "\n"
-    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showSelectAll") : depth0),{"name":"if","hash":{},"fn":container.program(12, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":76,"column":0},"end":{"line":86,"column":7}}})) != null ? stack1 : "")
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showSelectAll") : depth0),{"name":"if","hash":{},"fn":container.program(14, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":81,"column":0},"end":{"line":91,"column":7}}})) != null ? stack1 : "")
     + "\n"
-    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showPagination") : depth0),{"name":"if","hash":{},"fn":container.program(17, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":88,"column":0},"end":{"line":95,"column":7}}})) != null ? stack1 : "")
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showPagination") : depth0),{"name":"if","hash":{},"fn":container.program(19, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":93,"column":0},"end":{"line":100,"column":7}}})) != null ? stack1 : "")
     + "\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'list_header_view'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'list_header_view'; return template;});

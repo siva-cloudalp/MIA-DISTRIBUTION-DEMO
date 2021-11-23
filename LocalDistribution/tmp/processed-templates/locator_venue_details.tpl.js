@@ -40,7 +40,7 @@ define('locator_venue_details.tpl', ['Handlebars','Handlebars.CompilerNameLookup
 
   return "					<p>\n						<span class=\"locator-venue-details-phone-label\">"
     + alias1((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Phone:",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":17,"column":54},"end":{"line":17,"column":76}}}))
-    + " </span> \n						<a href=\"tel:"
+    + " </span>\n						<a href=\"tel:"
     + alias1(alias2(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"location") : depth0)) != null ? compilerNameLookup(stack1,"phone") : stack1), depth0))
     + "\" class=\"locator-venue-details-phone\">"
     + alias1(alias2(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"location") : depth0)) != null ? compilerNameLookup(stack1,"phone") : stack1), depth0))
@@ -121,4 +121,4 @@ define('locator_venue_details.tpl', ['Handlebars','Handlebars.CompilerNameLookup
     + "		</div>\n\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showServiceHours") : depth0),{"name":"if","hash":{},"fn":container.program(11, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":24,"column":2},"end":{"line":67,"column":9}}})) != null ? stack1 : "")
     + "\n	</div>\n</div>\n\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'locator_venue_details'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'locator_venue_details'; return template;});

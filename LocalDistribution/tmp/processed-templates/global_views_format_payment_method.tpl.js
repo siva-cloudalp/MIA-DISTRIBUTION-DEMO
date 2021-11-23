@@ -1,20 +1,16 @@
 define('global_views_format_payment_method.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var t = {"1":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3=container.escapeExpression, alias4=container.lambda;
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3=container.escapeExpression;
 
   return "		<div class=\"global-views-format-payment-method-header\">\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showCreditCardImage") : depth0),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.program(4, data, 0),"data":data,"loc":{"start":{"line":4,"column":3},"end":{"line":8,"column":10}}})) != null ? stack1 : "")
-    + "			<p class=\"global-views-format-payment-method-number\"> <b>"
-    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Ending in ",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":9,"column":60},"end":{"line":9,"column":86}}}))
-    + "</b> "
-    + alias3(((helper = (helper = compilerNameLookup(helpers,"creditCardNumberEnding") || (depth0 != null ? compilerNameLookup(depth0,"creditCardNumberEnding") : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"creditCardNumberEnding","hash":{},"data":data,"loc":{"start":{"line":9,"column":91},"end":{"line":9,"column":117}}}) : helper)))
-    + "</p>\n		</div>\n		<p class=\"global-views-format-payment-method-expdate\"><b>"
-    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Expires in ",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":11,"column":59},"end":{"line":11,"column":86}}}))
-    + "</b> "
-    + alias3(alias4(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"creditCard") : depth0)) != null ? compilerNameLookup(stack1,"ccexpiredate") : stack1), depth0))
-    + "</p>\n		<p class=\"global-views-format-payment-method-name\">"
-    + alias3(alias4(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"creditCard") : depth0)) != null ? compilerNameLookup(stack1,"ccname") : stack1), depth0))
+    + "			<p class=\"global-views-format-payment-method-number\"> &ndash; <b>"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Ending in $(0)",(depth0 != null ? compilerNameLookup(depth0,"creditCardNumberEnding") : depth0),{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":9,"column":68},"end":{"line":9,"column":121}}}))
+    + "</b></p>\n		</div>\n		<p class=\"global-views-format-payment-method-name\">"
+    + alias3(container.lambda(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"creditCard") : depth0)) != null ? compilerNameLookup(stack1,"ccname") : stack1), depth0))
+    + "</p>\n		<p class=\"global-views-format-payment-method-expdate\">"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Expires $(0)",((stack1 = (depth0 != null ? compilerNameLookup(depth0,"creditCard") : depth0)) != null ? compilerNameLookup(stack1,"ccexpiredate") : stack1),{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":12,"column":56},"end":{"line":12,"column":108}}}))
     + "</p>\n\n"
-    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showPurchaseNumber") : depth0),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":14,"column":2},"end":{"line":16,"column":9}}})) != null ? stack1 : "");
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showPurchaseNumber") : depth0),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":14,"column":2},"end":{"line":16,"column":8}}})) != null ? stack1 : "");
 },"2":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
 
@@ -89,4 +85,4 @@ define('global_views_format_payment_method.tpl', ['Handlebars','Handlebars.Compi
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showStreet") : depth0),{"name":"if","hash":{},"fn":container.program(16, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":46,"column":1},"end":{"line":48,"column":8}}})) != null ? stack1 : "")
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showZipCode") : depth0),{"name":"if","hash":{},"fn":container.program(18, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":49,"column":1},"end":{"line":51,"column":8}}})) != null ? stack1 : "")
     + "</div>\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'global_views_format_payment_method'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'global_views_format_payment_method'; return template;});

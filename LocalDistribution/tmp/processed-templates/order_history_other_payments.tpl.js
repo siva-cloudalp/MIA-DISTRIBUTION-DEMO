@@ -32,7 +32,7 @@ define('order_history_other_payments.tpl', ['Handlebars','Handlebars.CompilerNam
     + alias4((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Amount: ",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":33,"column":73},"end":{"line":33,"column":97}}}))
     + "</span>\n						<span class=\"order-history-other-payments-table-body-amount-value\">"
     + alias4(((helper = (helper = compilerNameLookup(helpers,"amount_formatted") || (depth0 != null ? compilerNameLookup(depth0,"amount_formatted") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"amount_formatted","hash":{},"data":data,"loc":{"start":{"line":34,"column":73},"end":{"line":34,"column":93}}}) : helper)))
-    + "</span>\n					</td>\n				</tr> \n";
+    + "</span>\n					</td>\n				</tr>\n";
 },"4":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
 
@@ -68,7 +68,7 @@ define('order_history_other_payments.tpl', ['Handlebars','Handlebars.CompilerNam
     + alias4((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Amount: ",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":58,"column":73},"end":{"line":58,"column":97}}}))
     + "</span>\n						<span class=\"order-history-other-payments-table-body-amount-value\">"
     + alias4(((helper = (helper = compilerNameLookup(helpers,"amount_formatted") || (depth0 != null ? compilerNameLookup(depth0,"amount_formatted") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"amount_formatted","hash":{},"data":data,"loc":{"start":{"line":59,"column":73},"end":{"line":59,"column":93}}}) : helper)))
-    + "</span>\n					</td>\n				</tr> \n";
+    + "</span>\n					</td>\n				</tr>\n";
 },"10":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
 
@@ -88,4 +88,4 @@ define('order_history_other_payments.tpl', ['Handlebars','Handlebars.CompilerNam
 
   return ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"showPayments") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":66,"column":7}}})) != null ? stack1 : "")
     + "\n\n\n";
-},"useData":true,"useDepths":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'order_history_other_payments'; return template;});
+},"useData":true,"useDepths":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'order_history_other_payments'; return template;});

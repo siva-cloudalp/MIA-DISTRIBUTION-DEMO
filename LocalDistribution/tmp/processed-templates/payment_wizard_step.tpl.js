@@ -8,17 +8,17 @@ define('payment_wizard_step.tpl', ['Handlebars','Handlebars.CompilerNameLookup']
 },"2":function(container,depth0,helpers,partials,data) {
     var helper;
 
-  return "				<button class=\"payment-wizard-step-button-continue\" data-action=\"submit-step\">\n					"
-    + container.escapeExpression(((helper = (helper = compilerNameLookup(helpers,"continueButtonLabel") || (depth0 != null ? compilerNameLookup(depth0,"continueButtonLabel") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"continueButtonLabel","hash":{},"data":data,"loc":{"start":{"line":15,"column":5},"end":{"line":15,"column":28}}}) : helper)))
-    + "\n				</button>\n";
+  return "			<button class=\"payment-wizard-step-button-continue\" data-action=\"submit-step\">\n				"
+    + container.escapeExpression(((helper = (helper = compilerNameLookup(helpers,"continueButtonLabel") || (depth0 != null ? compilerNameLookup(depth0,"continueButtonLabel") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"continueButtonLabel","hash":{},"data":data,"loc":{"start":{"line":15,"column":4},"end":{"line":15,"column":27}}}) : helper)))
+    + "\n			</button>\n";
 },"4":function(container,depth0,helpers,partials,data) {
-    return "				<button class=\"payment-wizard-step-button-back\" data-action=\"previous-step\">\n					"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Back",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":20,"column":5},"end":{"line":20,"column":25}}}))
-    + "\n				</button>\n";
+    return "			<button class=\"payment-wizard-step-button-back\" data-action=\"previous-step\">\n				"
+    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Back",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":20,"column":4},"end":{"line":20,"column":24}}}))
+    + "\n			</button>\n";
 },"6":function(container,depth0,helpers,partials,data) {
-    return "				<a class=\"payment-wizard-step-button-back\" href=\"/invoices\"> \n					"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Back",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":24,"column":5},"end":{"line":24,"column":25}}}))
-    + "\n				</a>\n";
+    return "			<a class=\"payment-wizard-step-button-back\" href=\"/invoices\">\n				"
+    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Back",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":24,"column":4},"end":{"line":24,"column":24}}}))
+    + "\n			</a>\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
@@ -27,4 +27,4 @@ define('payment_wizard_step.tpl', ['Handlebars','Handlebars.CompilerNameLookup']
     + "</h2>\n\n<div data-type=\"alert-placeholder-step\"></div>\n\n<div class=\"payment-wizard-step-content-wrapper\">\n	<div id=\"wizard-step-content\" class=\"payment-wizard-step-content-main\"></div>\n	<div id=\"wizard-step-content-right\" class=\"payment-wizard-step-content-secondary\"></div>\n\n\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showNavButtons") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":10,"column":1},"end":{"line":29,"column":8}}})) != null ? stack1 : "")
     + "\n</div>\n\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'payment_wizard_step'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'payment_wizard_step'; return template;});

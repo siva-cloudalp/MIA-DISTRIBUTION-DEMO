@@ -1,45 +1,45 @@
 define('order_history_summary.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var t = {"1":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression;
 
-  return "			<p class=\"order-history-summary-summary-grid-float\">\n				<span class=\"order-history-summary-summary-amount-handling\">\n					"
+  return "		<p class=\"order-history-summary-summary-grid-float\">\n				<span class=\"order-history-summary-summary-amount-handling\">\n					"
     + alias1(container.lambda(((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"summary") : stack1)) != null ? compilerNameLookup(stack1,"handlingcost_formatted") : stack1), depth0))
-    + "\n				</span>\n				"
-    + alias1((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Handling Total",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":22,"column":4},"end":{"line":22,"column":34}}}))
-    + "\n			</p>\n";
+    + "\n				</span>\n			"
+    + alias1((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Handling Total",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":22,"column":3},"end":{"line":22,"column":33}}}))
+    + "\n		</p>\n";
 },"3":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression;
 
-  return "			<p class=\"order-history-summary-summary-grid-float\">\n				<span class=\"order-history-summary-summary-amount-certificate\">\n					"
+  return "		<p class=\"order-history-summary-summary-grid-float\">\n				<span class=\"order-history-summary-summary-amount-certificate\">\n					"
     + alias1(container.lambda(((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"summary") : stack1)) != null ? compilerNameLookup(stack1,"giftcertapplied_formatted") : stack1), depth0))
-    + "\n				</span>\n				"
-    + alias1((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Gift Cert Total",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":31,"column":4},"end":{"line":31,"column":35}}}))
-    + "\n			</p>\n";
+    + "\n				</span>\n			"
+    + alias1((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Gift Cert Total",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":31,"column":3},"end":{"line":31,"column":34}}}))
+    + "\n		</p>\n";
 },"5":function(container,depth0,helpers,partials,data) {
-    return "			<div data-view=\"CartPromocodeListView\"></div>\n";
+    return "		<div data-view=\"CartPromocodeListView\"></div>\n";
 },"7":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression;
 
-  return "			<p class=\"order-history-summary-summary-grid-float\">\n				<span class=\"order-history-summary-summary-amount-discount\">\n					"
+  return "		<p class=\"order-history-summary-summary-grid-float\">\n				<span class=\"order-history-summary-summary-amount-discount\">\n					"
     + alias1(container.lambda(((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"summary") : stack1)) != null ? compilerNameLookup(stack1,"discounttotal_formatted") : stack1), depth0))
-    + "\n				</span>\n				"
-    + alias1((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Discount Total",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":44,"column":4},"end":{"line":44,"column":34}}}))
-    + "\n			</p>\n";
+    + "\n				</span>\n			"
+    + alias1((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Discount Total",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":44,"column":3},"end":{"line":44,"column":33}}}))
+    + "\n		</p>\n";
 },"9":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression;
 
-  return "			<p class=\"order-history-summary-summary-grid-float\">\n				<span class=\"order-history-summary-summary-amount-shipping\">\n					"
+  return "		<p class=\"order-history-summary-summary-grid-float\">\n				<span class=\"order-history-summary-summary-amount-shipping\">\n					"
     + alias1(container.lambda(((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"summary") : stack1)) != null ? compilerNameLookup(stack1,"shippingcost_formatted") : stack1), depth0))
-    + "\n				</span>\n				"
-    + alias1((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Shipping Total",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":53,"column":4},"end":{"line":53,"column":34}}}))
-    + "\n			</p>\n";
+    + "\n				</span>\n			"
+    + alias1((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Shipping Total",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":53,"column":3},"end":{"line":53,"column":33}}}))
+    + "\n		</p>\n";
 },"11":function(container,depth0,helpers,partials,data) {
     var alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3=container.escapeExpression;
 
-  return "			<p class=\"order-history-summary-summary-grid-float\">\n				"
-    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Pick Up",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":58,"column":4},"end":{"line":58,"column":27}}}))
-    + "\n				<span class=\"order-history-summary-pickup-label-free\"> "
-    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"FREE",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":59,"column":59},"end":{"line":59,"column":79}}}))
-    + "</span>\n			</p>\n";
+  return "		<p class=\"order-history-summary-summary-grid-float\">\n			"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Pick Up",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":58,"column":3},"end":{"line":58,"column":26}}}))
+    + "\n			<span class=\"order-history-summary-pickup-label-free\"> "
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"FREE",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":59,"column":58},"end":{"line":59,"column":78}}}))
+    + "</span>\n		</p>\n";
 },"13":function(container,depth0,helpers,partials,data) {
     var stack1;
 
@@ -47,11 +47,11 @@ define('order_history_summary.tpl', ['Handlebars','Handlebars.CompilerNameLookup
 },"14":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3=container.escapeExpression;
 
-  return "\n			<p class=\"order-history-summary-summary-grid-float\">\n				<span class=\"order-history-summary-summary-amount-tax\">\n					"
+  return "\n		<p class=\"order-history-summary-summary-grid-float\">\n				<span class=\"order-history-summary-summary-amount-tax\">\n					"
     + alias3(((helper = (helper = compilerNameLookup(helpers,"taxTotal") || (depth0 != null ? compilerNameLookup(depth0,"taxTotal") : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"taxTotal","hash":{},"data":data,"loc":{"start":{"line":66,"column":5},"end":{"line":66,"column":17}}}) : helper)))
-    + "\n				</span>\n				"
-    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,(depth0 != null ? compilerNameLookup(depth0,"taxTypeName") : depth0),{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":68,"column":4},"end":{"line":68,"column":29}}}))
-    + "\n			</p>\n		";
+    + "\n				</span>\n			"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,(depth0 != null ? compilerNameLookup(depth0,"taxTypeName") : depth0),{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":68,"column":3},"end":{"line":68,"column":28}}}))
+    + "\n		</p>\n		";
 },"16":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression;
 
@@ -71,36 +71,54 @@ define('order_history_summary.tpl', ['Handlebars','Handlebars.CompilerNameLookup
 },"20":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "			<!-- REORDER ALL ITEMS -->\n			<a href=\"/reorderItems?order_id="
+  return "		<!-- REORDER ALL ITEMS -->\n		<a href=\"/reorderItems?order_id="
     + alias2(alias1(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"internalid") : stack1), depth0))
     + "&order_number="
     + alias2(alias1(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"tranid") : stack1), depth0))
-    + "\" class=\"order-history-summary-button-reorder\">\n				"
-    + alias2((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Reorder All Items",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":103,"column":4},"end":{"line":103,"column":37}}}))
-    + "\n			</a>\n";
+    + "\" class=\"order-history-summary-button-reorder\">\n			"
+    + alias2((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Reorder All Items",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":103,"column":3},"end":{"line":103,"column":36}}}))
+    + "\n		</a>\n";
 },"22":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3=container.escapeExpression;
+
+  return "			<!-- DOWNLOAD Mac Address -->\n			<a href=\""
+    + alias3(((helper = (helper = compilerNameLookup(helpers,"macUrl") || (depth0 != null ? compilerNameLookup(depth0,"macUrl") : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"macUrl","hash":{},"data":data,"loc":{"start":{"line":113,"column":12},"end":{"line":113,"column":22}}}) : helper)))
+    + "\" target=\"_blank\" class=\"order-history-summary-button-download-pdf\">\n				"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Download MAC Address",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":114,"column":4},"end":{"line":114,"column":40}}}))
+    + "\n			</a>\n";
+},"24":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "			<a data-permissions=\"transactions.tranRtnAuth.2\" href=\"/returns/new/"
+  return "		<a data-permissions=\"transactions.tranRtnAuth.2\" href=\"/returns/new/"
     + alias2(alias1(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"recordtype") : stack1), depth0))
     + "/"
     + alias2(alias1(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"internalid") : stack1), depth0))
-    + "\" class=\"order-history-summary-button-request-return\">\n				"
-    + alias2((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Request a Return",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":114,"column":4},"end":{"line":114,"column":36}}}))
-    + "\n			</a>\n";
-},"24":function(container,depth0,helpers,partials,data) {
-    return "			<a class=\"order-history-summary-button-cancel-order\" data-action=\"cancel\">\n				"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Cancel Purchase",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":120,"column":4},"end":{"line":120,"column":35}}}))
-    + "\n			</a>\n";
+    + "\" class=\"order-history-summary-button-request-return\">\n			"
+    + alias2((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Request a Return",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":126,"column":3},"end":{"line":126,"column":35}}}))
+    + "\n		</a>\n";
 },"26":function(container,depth0,helpers,partials,data) {
+    return "		<a class=\"order-history-summary-button-cancel-order\" data-action=\"cancel\">\n			"
+    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Cancel Purchase",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":132,"column":3},"end":{"line":132,"column":34}}}))
+    + "\n		</a>\n";
+},"28":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "			<a data-permissions=\"\" href=\"/invoices/"
+  return "		<a data-permissions=\"\" href=\"/invoices/"
     + alias2(alias1(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"invoiceModel") : depth0)) != null ? compilerNameLookup(stack1,"internalid") : stack1), depth0))
     + "\" data-id=\""
     + alias2(alias1(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"invoiceModel") : depth0)) != null ? compilerNameLookup(stack1,"internalid") : stack1), depth0))
+    + "\" class=\"order-history-summary-button-view-invoice\">\n			"
+    + alias2((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"View Invoice",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":138,"column":3},"end":{"line":138,"column":31}}}))
+    + "\n		</a>\n";
+},"30":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
+
+  return "			<a data-permissions=\"\" href=\"/cashsales/"
+    + alias2(alias1(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"cashsaleModel") : depth0)) != null ? compilerNameLookup(stack1,"internalid") : stack1), depth0))
+    + "\" data-id=\""
+    + alias2(alias1(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"cashsaleModel") : depth0)) != null ? compilerNameLookup(stack1,"internalid") : stack1), depth0))
     + "\" class=\"order-history-summary-button-view-invoice\">\n				"
-    + alias2((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"View Invoice",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":126,"column":4},"end":{"line":126,"column":32}}}))
+    + alias2((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"View Cash Sale",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":143,"column":4},"end":{"line":143,"column":34}}}))
     + "\n			</a>\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3=container.escapeExpression, alias4=container.lambda;
@@ -138,11 +156,18 @@ define('order_history_summary.tpl', ['Handlebars','Handlebars.CompilerNameLookup
     + alias3(((helper = (helper = compilerNameLookup(helpers,"pdfUrl") || (depth0 != null ? compilerNameLookup(depth0,"pdfUrl") : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"pdfUrl","hash":{},"data":data,"loc":{"start":{"line":108,"column":11},"end":{"line":108,"column":21}}}) : helper)))
     + "\" target=\"_blank\" class=\"order-history-summary-button-download-pdf\">\n			"
     + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Download PDF",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":109,"column":3},"end":{"line":109,"column":31}}}))
-    + "\n		</a>\n\n"
-    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showRequestReturnButton") : depth0),{"name":"if","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":112,"column":2},"end":{"line":116,"column":9}}})) != null ? stack1 : "")
+    + "\n		</a>\n"
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"macUrl") : depth0),{"name":"if","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":111,"column":2},"end":{"line":116,"column":9}}})) != null ? stack1 : "")
+    + "		\n		<!-- Follow Up -->\n		<button name=\"follow_up_order\" class=\"order-history-summary-button-download-pdf\" data-id=\""
+    + alias3(alias4(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"internalid") : stack1), depth0))
+    + "\">\n			"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"FOLLOW UP",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":120,"column":3},"end":{"line":120,"column":28}}}))
+    + "\n		</button>\n		<small class=\"quote-details-disclaimer-message\"></small>\n\n"
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showRequestReturnButton") : depth0),{"name":"if","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":124,"column":2},"end":{"line":128,"column":9}}})) != null ? stack1 : "")
     + "\n"
-    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showCancelButton") : depth0),{"name":"if","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":118,"column":2},"end":{"line":122,"column":9}}})) != null ? stack1 : "")
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showCancelButton") : depth0),{"name":"if","hash":{},"fn":container.program(26, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":130,"column":2},"end":{"line":134,"column":9}}})) != null ? stack1 : "")
     + "\n"
-    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showViewInvoiceButton") : depth0),{"name":"if","hash":{},"fn":container.program(26, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":124,"column":2},"end":{"line":128,"column":9}}})) != null ? stack1 : "")
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showViewInvoiceButton") : depth0),{"name":"if","hash":{},"fn":container.program(28, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":136,"column":2},"end":{"line":140,"column":9}}})) != null ? stack1 : "")
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showViewCashSaleButton") : depth0),{"name":"if","hash":{},"fn":container.program(30, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":141,"column":2},"end":{"line":145,"column":9}}})) != null ? stack1 : "")
     + "	</div>\n</div>\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'order_history_summary'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'order_history_summary'; return template;});

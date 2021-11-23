@@ -11,7 +11,7 @@ define('product_list_display_full.tpl', ['Handlebars','Handlebars.CompilerNameLo
 },"4":function(container,depth0,helpers,partials,data) {
     return "checked";
 },"6":function(container,depth0,helpers,partials,data) {
-    return "		<p class=\"product-list-display-full-rating\">\n				<span data-view=\"GlobalViews.StarRating\"></span>\n			</p>\n";
+    return "		<p class=\"product-list-display-full-rating\" itemscope itemtype=\"https://schema.org/AggregateRating\">\n				<span data-view=\"GlobalViews.StarRating\"></span>\n			</p>\n";
 },"8":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3=container.escapeExpression;
 
@@ -71,4 +71,4 @@ define('product_list_display_full.tpl', ['Handlebars','Handlebars.CompilerNameLo
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showEdit") : depth0),{"name":"if","hash":{},"fn":container.program(12, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":65,"column":2},"end":{"line":67,"column":9}}})) != null ? stack1 : "")
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showMoveAction") : depth0),{"name":"if","hash":{},"fn":container.program(14, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":68,"column":2},"end":{"line":70,"column":9}}})) != null ? stack1 : "")
     + "	</td>\n</tr>\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'product_list_display_full'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'product_list_display_full'; return template;});

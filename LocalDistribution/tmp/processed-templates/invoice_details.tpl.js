@@ -271,10 +271,10 @@ define('invoice_details.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], fu
 },"62":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression, alias2=depth0 != null ? depth0 : (container.nullContext || {}), alias3=container.hooks.helperMissing;
 
-  return "						<a href=\"invoices/"
+  return "					<a href=\"invoices/"
     + alias1(container.lambda(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"internalid") : stack1), depth0))
     + "\" class=\"invoice-details-link-goto\" data-action=\"update-layout\">"
-    + alias1((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias3).call(alias2,"Go to detailed page",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":316,"column":108},"end":{"line":316,"column":143}}}))
+    + alias1((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias3).call(alias2,"Go to detailed page",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":316,"column":107},"end":{"line":316,"column":142}}}))
     + "</a>\n						<a href=\"#\" class=\"invoice-details-button-close\" data-dismiss=\"modal\">"
     + alias1((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias3).call(alias2,"Close",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":317,"column":76},"end":{"line":317,"column":97}}}))
     + "</a>\n";
@@ -289,11 +289,11 @@ define('invoice_details.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], fu
 },"66":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression;
 
-  return "						<a href=\"/returns/new/invoice/"
+  return "					<a href=\"/returns/new/invoice/"
     + alias1(container.lambda(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"internalid") : stack1), depth0))
-    + "\" class=\"invoice-details-button-request\" data-permissions=\"transactions.tranRtnAuth.2\">\n 	 			        	"
-    + alias1((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Request Return",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":326,"column":15},"end":{"line":326,"column":45}}}))
-    + "\n						</a>\n";
+    + "\" class=\"invoice-details-button-request\" data-permissions=\"transactions.tranRtnAuth.2\">\n						"
+    + alias1((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Request Return",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":326,"column":6},"end":{"line":326,"column":36}}}))
+    + "\n					</a>\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3=container.escapeExpression, alias4=container.lambda;
 
@@ -358,4 +358,4 @@ define('invoice_details.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], fu
     + "\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showRequestReturnButton") : depth0),{"name":"if","hash":{},"fn":container.program(66, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":324,"column":5},"end":{"line":328,"column":12}}})) != null ? stack1 : "")
     + "				</div>\n			</div>\n		</div>\n	</div>\n</section>\n\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'invoice_details'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'invoice_details'; return template;});

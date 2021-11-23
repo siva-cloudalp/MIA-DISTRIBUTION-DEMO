@@ -27,6 +27,18 @@ define('recordviews_actionable.tpl', ['Handlebars','Handlebars.CompilerNameLooku
   return "				<span class=\"recordviews-actionable-value\">"
     + container.escapeExpression(((helper = (helper = compilerNameLookup(helpers,"value") || (depth0 != null ? compilerNameLookup(depth0,"value") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"value","hash":{},"data":data,"loc":{"start":{"line":14,"column":47},"end":{"line":14,"column":56}}}) : helper)))
     + "</span>\n";
+},"8":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "		<td class=\"recordviews-actionable-actions\">\n			<p class=\"recordviews-actionable-label\"> "
+    + container.escapeExpression(((helper = (helper = compilerNameLookup(helpers,"actionTitle") || (depth0 != null ? compilerNameLookup(depth0,"actionTitle") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"actionTitle","hash":{},"data":data,"loc":{"start":{"line":20,"column":44},"end":{"line":20,"column":59}}}) : helper)))
+    + " </p>\n			<div data-view=\"Action.View\" ></div>\n		</td>\n";
+},"10":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "	<td class=\"recordviews-actionable-followup\" data-name=\"followup\">\n		<button name=\"follow_up_order\" data-id=\""
+    + container.escapeExpression(((helper = (helper = compilerNameLookup(helpers,"id") || (depth0 != null ? compilerNameLookup(depth0,"id") : depth0)) != null ? helper : container.hooks.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"id","hash":{},"data":data,"loc":{"start":{"line":26,"column":42},"end":{"line":26,"column":48}}}) : helper)))
+    + "\">Follow Up</button>\n		<small class=\"quote-details-disclaimer-message\"></small>\n	</td>\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
 
@@ -44,7 +56,7 @@ define('recordviews_actionable.tpl', ['Handlebars','Handlebars.CompilerNameLooku
     + alias4(((helper = (helper = compilerNameLookup(helpers,"title") || (depth0 != null ? compilerNameLookup(depth0,"title") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data,"loc":{"start":{"line":3,"column":77},"end":{"line":3,"column":86}}}) : helper)))
     + "</a>\n	</td>\n\n"
     + ((stack1 = compilerNameLookup(helpers,"each").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"columns") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":6,"column":1},"end":{"line":17,"column":10}}})) != null ? stack1 : "")
-    + "\n	<td class=\"recordviews-actionable-actions\">\n		<p class=\"recordviews-actionable-label\"> "
-    + alias4(((helper = (helper = compilerNameLookup(helpers,"actionTitle") || (depth0 != null ? compilerNameLookup(depth0,"actionTitle") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"actionTitle","hash":{},"data":data,"loc":{"start":{"line":20,"column":43},"end":{"line":20,"column":58}}}) : helper)))
-    + " </p>\n		<div data-view=\"Action.View\" ></div>\n	</td>\n</tr>\n\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/sca/Suite_Commerce_Base_Theme/21.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'recordviews_actionable'; return template;});
+    + ((stack1 = compilerNameLookup(helpers,"unless").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"hideTracking") : depth0),{"name":"unless","hash":{},"fn":container.program(8, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":18,"column":1},"end":{"line":23,"column":12}}})) != null ? stack1 : "")
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showFollowUp") : depth0),{"name":"if","hash":{},"fn":container.program(10, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":24,"column":1},"end":{"line":29,"column":8}}})) != null ? stack1 : "")
+    + "</tr>\n\n\n\n\n";
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/miaCustomTheme/miaCustomTheme/1.0.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'recordviews_actionable'; return template;});

@@ -1,0 +1,119 @@
+{
+	"name": "NewPageTypeExtension",
+	"fantasyName": "New Page Type",
+	"vendor": "MIA",
+	"type": "extension",
+	"page": {
+		"types": [
+			{
+				"name": "NewLandingPage",
+				"displayName": "New Landing Page",
+				"description": "Create New page type"
+			}
+		]
+	},
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Create new page type",
+	"assets": {
+		"img": {
+			"files": [
+				"img/smtLayout-2row.svg"
+			]
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/NewPageTypeModule.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/NewPageTypeModule/Configuration/NewPageTypeModule.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/NewPageTypeModule/Templates/mia_newpagetype_newpagetypemodule.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/NewPageTypeModule/Templates/mia_newpagetype_newpagetypemodule.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/NewPageTypeModule/Templates/mia_newpagetype_newpagetypemodule.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/NewPageTypeModule/Sass/_newpagetype-newpagetypemodule.scss",
+			"myaccount": "Modules/NewPageTypeModule/Sass/_newpagetype-newpagetypemodule.scss",
+			"checkout": "Modules/NewPageTypeModule/Sass/_newpagetype-newpagetypemodule.scss"
+		},
+		"files": [
+			"Modules/NewPageTypeModule/Sass/_newpagetype-newpagetypemodule.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/NewPageTypeModule/JavaScript/MIA.NewPageType.NewPageTypeModule.js",
+			"myaccount": "Modules/NewPageTypeModule/JavaScript/MIA.NewPageType.NewPageTypeModule.js",
+			"checkout": "Modules/NewPageTypeModule/JavaScript/MIA.NewPageType.NewPageTypeModule.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/NewPageTypeModule/JavaScript/MIA.NewPageType.NewPageTypeModule.js",
+					"Modules/NewPageTypeModule/JavaScript/NewPageTypeModule.View.js",
+					"Modules/NewPageTypeModule/JavaScript/MIA.NewPageType.NewPageTypeModule.Model.js",
+					"Modules/NewPageTypeModule/JavaScript/MIA.NewPageType.NewPageTypeModule.SS2Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/NewPageTypeModule/JavaScript/MIA.NewPageType.NewPageTypeModule.js",
+					"Modules/NewPageTypeModule/JavaScript/NewPageTypeModule.View.js",
+					"Modules/NewPageTypeModule/JavaScript/MIA.NewPageType.NewPageTypeModule.Model.js",
+					"Modules/NewPageTypeModule/JavaScript/MIA.NewPageType.NewPageTypeModule.SS2Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/NewPageTypeModule/JavaScript/MIA.NewPageType.NewPageTypeModule.js",
+					"Modules/NewPageTypeModule/JavaScript/NewPageTypeModule.View.js",
+					"Modules/NewPageTypeModule/JavaScript/MIA.NewPageType.NewPageTypeModule.Model.js",
+					"Modules/NewPageTypeModule/JavaScript/MIA.NewPageType.NewPageTypeModule.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/NewPageTypeModule/SuiteScript/MIA.NewPageType.NewPageTypeModule.js",
+		"files": [
+			"Modules/NewPageTypeModule/SuiteScript/MIA.NewPageType.NewPageTypeModule.js",
+			"Modules/NewPageTypeModule/SuiteScript/NewPageTypeModule.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/NewPageTypeModule/SuiteScript2/NewPageTypeModule.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/MIA/NewPageTypeExtension@1.0.0",
+	"activation_id": "15",
+	"extension_id": "10013"
+}
