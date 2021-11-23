@@ -1,7 +1,3 @@
-.get-in-touch{
- 	
-}
-
 
 .get-in-touch-main-form{
 	@media (min-width:$screen-md-min){
@@ -102,7 +98,6 @@
 }
 .become-a-part-of-mia-family-tab-get-in-touch{
 	@media(min-width:$screen-sm-min){
-		// margin-bottom: $sc-margin-lv2*3;
 		display: inline;
 		margin: 10px 10px 10px 10px;
 	 }
@@ -134,17 +129,11 @@ margin-top: 30px;
 
 
 .fluid-container-content-become-a-family-tab{
-	//  display: none;
 	 @media (min-width:$screen-md-min) {
-		//  display: block;
 		margin-bottom: $sc-margin-lv2*10;
 		margin-top: $sc-margin-lv2*10;
 	}
 		background: #F77534;
-
-		//  height: 50px;
-		//  text-align: center;
-	 
 	 .become-a-part-of-mia-family-text-get-in-touch{
 		padding: 12px 30px 10px 30px;
 		font-weight: lighter;
@@ -169,16 +158,12 @@ margin-top: 30px;
 			color: #F77534;
 			border: whitesmoke;
 			background: whitesmoke;
-			// padding: 10px 20px 10px 25px;
 			padding: 10px 30px 10px 30px;
 			position: absolute;
-
-			// margin-top: 10px;
 			 margin-left: 140px;
 			 height: min-content;
 		}
 	}
-	//  }
 	 @media(max-width:$screen-md-min){
 			display: none;
 	 }
@@ -210,8 +195,6 @@ margin-top: 30px;
 	font-size:22.8px;
 	color:#fff;
 	text-decoration:none;
-	// line-height:50px;
-	// line-height: 49px;
 	line-height: 58px;
 	transition:all .4s ease;
 	z-index:2;
@@ -219,9 +202,6 @@ margin-top: 30px;
 	width: 100%;
 	display: inline-block;
   }
-  // a{
-  //     color: $orange;
-  // }
   .about-us-eff-1-get-in-touch{
 	width: 100%;
 	height:58px;
@@ -247,7 +227,6 @@ margin-top: 30px;
 		width: 100%;
 		box-sizing: border-box;
 		float: none;
-		// display: none;
 	}
 	.about-us-eff-12-value-add-service{
 		width: 100%;
@@ -255,7 +234,6 @@ margin-top: 30px;
 	}
 }
 .about-us-button2-get-in-touch{
-	// @extend .col-sm-6;
 	width: 100%;
 	height:58px;
 	border:1px solid #F58331;
@@ -268,9 +246,7 @@ margin-top: 30px;
 	overflow:hidden;
 	margin:20px auto;
 	background:white;
-// 	a{
-// 	  color: #F58331;
-//   }
+
   }
    
   .about-us-button2-get-in-touch a{
@@ -282,7 +258,6 @@ margin-top: 30px;
 	transition:all .4s ease;
 	z-index:2;
 	position:relative;
-	// width: 100%;
 	display: inline-block;
   }
   a{
@@ -305,7 +280,7 @@ margin-top: 30px;
 }
 .about-us-button2-get-in-touch:hover a{
 	color:white;
-	// background-color: #F58331;
+ 
   }
 
  
@@ -314,7 +289,7 @@ margin-top: 30px;
 		width: 100%;
 		box-sizing: border-box;
 		float: none;
-		// display: none;
+		 
 	}
 
 }

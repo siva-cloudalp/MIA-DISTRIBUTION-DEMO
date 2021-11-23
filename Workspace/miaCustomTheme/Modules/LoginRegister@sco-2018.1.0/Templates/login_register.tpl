@@ -11,23 +11,7 @@
 				<div class="login-register-wrapper-login" data-view="Login"></div>
 			</div>
 		{{/if}}
-   {{!----
-		{{#if showRegisterOrGuest}}
-			<div class="login-register-wrapper-column-register">
-				<div class="login-register-wrapper-register">
-					<h2 class="login-register-title-register">{{translate 'New customer'}}</h2>
-          
-					{{#if showCheckoutAsGuest}}
-						<div class="login-register-wrapper-guest" data-view="CheckoutAsGuest"></div>
-					{{/if}}
-          
-					{{#if showRegister}}
-						<div class="{{#if showCheckoutAsGuest}}collapse{{/if}} " data-view="Register" id="register-view"></div>
-					{{/if}}
-				</div>
-			</div>
-		{{/if}}
-     ----}}
+
 	</div>
 	
 
@@ -35,98 +19,6 @@
 
 	<div data-cms-area="home_cms_main_content" data-cms-area-filters="path"></div>
 
-
-{{!----
-	 
-  <div class="row main-content-login-page">
-    <div class="col-sm-6 login-page-main-form">
-       <h1 class="login-page-content-heading">Howdy Partner,</h1>
-	   <h1 class="login-page-content-heading-2">Welcome Back.</h1>
-	   {{!---- <form method="POST" class="get-in-touch-form-tag">
-	      <div class="login-input-field">
-		       <div class="login-email-field">
-		          <input type="text" name="email" placeholder="*Email Address..">
-		       </div>
-		     </div>
-		     <div class="login-input-field">
-		       <div class="login-password-field">
-		          <input type="password" name="password" placeholder="password">
-		       </div>
-		     </div>
-		     
-		     <div class="form-submit-button1-login">
-		    <div class="login-button1">
-             <div class="login-eff-1"></div>
-              <a href="#" class="anchor1-login" type="submit" >Login</a>
-             </div>
-		    </div>
-			<div class="register-page-redirect-link">
-			<p class="not-a-partner">Not a Partner? <a class="login-redirect-register"> Click Here</a> To start Your Journey </p>
-			</div>
-		     
-	    </form>
-     
-<form class="login-register-login-form-custom" novalidate>
-	<fieldset class="login-register-login-form-fieldset-custom-field">
-		<div class="login-register-login-form-controls-group" data-validation="control-group">
-		 	<label class="login-register-login-form-label" for="login-email">
-				{{translate 'Email Address <small class="login-register-login-form-required">*</small>'}}
-			</label>
-			<div class="login-register-login-form-controls login-email-field " data-validation="control">
-				<input {{#if hasAutoFocus}} autofocus {{/if}} type="email" name="email" id="login-email" class="login-register-login-form-input" placeholder="{{translate 'your@email.com'}}"/>
-			</div>
-		</div>
-
-		<div class="login-register-login-form-controls-group" data-validation="control-group">
-		 	<label class="login-register-login-form-label" for="login-password">
-				{{translate 'Password <small class="login-register-login-form-required">*</small>'}}
-			</label>
-			<div class="login-register-login-form-controls login-password-field" data-validation="control">
-				<input type="password" name="password" id="login-password" class="login-register-login-form-input">
-			</div>
-		</div>
-
-		<div data-view="Login.CustomFields"></div>
-
-		{{#if isRedirect}}
-			<div class="login-register-login-form-controls-group" data-validation="control-group">
-				<div class="login-register-login-form-controls" data-validation="control">
-					<input value="true" type="hidden" name="redirect">
-				</div>
-			</div>
-		{{/if}}
-
-		<div data-type="alert-placeholder" class="login-register-login-form-messages">
-			{{#if isUserSessionTimedOut}}
-				<div data-view="GlobalMessageSessionTimeout"></div>
-			{{/if}}
-		</div>
-
-		<div class="login-register-login-form-controls-group" data-type="form-login-action">
-       <div class="form-submit-button1-login">
-		    <div class="login-button1">
-             <div class="login-eff-1"></div>
-              <a type="submit" class="anchor1-login" data-action="login-button" >Login</a>
-             </div>
-		    </div>
-		<a class="login-register-login-forgot" data-action="forgot-password" href="/forgot-password">
-				{{translate 'Forgot password?'}}
-			</a>
-		</div>
-    <div class="register-page-redirect-link">
-			<p class="not-a-partner">Not a Partner? <a class="login-redirect-register"> Click Here</a> To start Your Journey </p>
-		</div>
-	</fieldset>
-</form>
-    </div>
-    <div class="col-sm-6 login-page-image-form">
-      <div class="login-page-image-field">
-        <img src="{{getThemeAssetsPath (resizeImage 'img/login-main-img-content.png' ../imageHomeSize)}}" alt="demo-get in touch">
-      </div>
-    </div>
-  </div>
-
-----}}
 
     <div class="register-page-redirect-link">
 			<p class="not-a-partner">Not a Partner? <a class="login-redirect-register" data-touchpoint="login" data-hashtag="login-register"> Click Here</a> To start Your Journey </p>
@@ -139,10 +31,6 @@
       </div>
     </div>
 </div>
-
-{{!----
-   <div class="get-in-touch-content-fluid-content container">
-   ----}}
 
 
     <div class="container home-main-hr1"><hr class="embeded-hr-content"></div>
@@ -192,9 +80,7 @@
 
 
 
-        {{!----
-      </div>
-      ----}}
+    
 
 {{!----
 Use the following context variables when customizing this template:

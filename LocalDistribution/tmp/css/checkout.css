@@ -12129,7 +12129,7 @@ input.creditcard-edit-form-securitycode-group-input {
     .location-heading-content-component-login .heading-2-location-login {
       font-size: 28px;
       color: #222222;
-      font-weight: 400; } }
+      font-weight: bold; } }
   @media (max-width: 767px) {
     .location-heading-content-component-login {
       margin-bottom: 25px; }

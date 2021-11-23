@@ -9,7 +9,7 @@
   @media(min-width:$screen-sm-min)and (max-width:$screen-md-min){height: auto;}
   @media(min-width:993px){height:520px ;}
   @media(max-width:$screen-sm-min){height:auto ;}
-  // height: auto;
+ 
   @extend .col-sm-6;
 }
 .value-add-service-right-content{
@@ -20,7 +20,7 @@
     h1{
       font-size: 30px;
     
-      // font-weight: 700;
+     
     }
     .value-add-services-main-professional-services{
       color: #F58331;
@@ -49,20 +49,14 @@
     }
   }
  
-  // h1{
-  //     font-size: 2.5rem;
-  // }
+  
   .value-add-services-main-professional-services{
       color: #F58331;
   }
  
 }
 .value-add-service-description-content{
-  // @media (min-width:768px)and(max-width:779px){
-  //   p{
-  //     font-size: $sc-font-size-xxs;
-  //   }
-  // }
+
   p{
       @media (max-width:$screen-sm-min){
           display: none;
@@ -85,9 +79,9 @@
 
   .value-add-service-button1{
       @extend .col-sm-6;
-      // width: 40%;
+     
       width: 203px;
-      // height:50px;
+    
       height: 43.02px;
       border:1px solid #F58331;
       border-radius: 9px;
@@ -109,15 +103,13 @@
       font-size:20.04px;
       color:#fff;
       text-decoration:none;
-      // line-height:50px;
+     
       line-height: 2.1;
       transition:all .4s ease;
       z-index:2;
       position:relative;
     }
-    // a{
-    //     color: $orange;
-    // }
+   
     .value-add-service-eff-1{
       width: 100%;
       height:50px;
@@ -143,7 +135,7 @@
           width: 100%;
           box-sizing: border-box;
           float: none;
-          // display: none;
+         
       }
       .value-add-service-eff-1{
           width: 100%;
@@ -189,7 +181,7 @@
       font-size: 18px;
     }
     @media(min-width:1200px){
-          // height: 550px;\
+        
           height: 700px;
           width: 24%;
           p{
@@ -198,12 +190,12 @@
           }
           a{
             font-size: 18px;
-            // font-weight: bold;
+            
           
           }
     }
     @media (min-width:1000px)and(max-width:1200px){
-        // height: 550px;\
+     
         height: 730px;
         width: 24%;
         h2{
@@ -222,7 +214,7 @@
         }
     }
     @media(min-width:$screen-md-min)and(max-width:999px){
-        // height: 550px;\
+        
         height: 700px;
         width: 24%;
         h2{
@@ -246,7 +238,7 @@
       h2{
        font-size: 18px;
        font-weight: bold;
-      //  font-style: $sc-font-family;
+      
     
       }
       p{
@@ -265,7 +257,7 @@
          h2{
           font-size: 18px;
           font-weight: lighter;
-          // font-style: $sc-font-family;
+         
         
          }
          p{
@@ -277,7 +269,7 @@
     }
     @media (max-width:767px){
       width: 90%;
-      // height: 500px;
+      
       margin-bottom: $sc-margin-lv2;
       padding: 5%;
       h2{
@@ -294,7 +286,7 @@
       }
       a{
         font-size: 18px;
-        // font-weight: bold;
+        
       
       }
   }
@@ -314,7 +306,7 @@
 }
 .card-content1-1{
   border:1px solid rgba(0,0,0,0.2);
-    // background: #FEFEFE;
+    background-color: #FEFEFE;
     position: relative;
   margin-left: 10px;
   h2{
@@ -335,7 +327,7 @@
   
   }
   @media(min-width:1200px){
-    // height: 550px;\
+    
     height: 700px;
     width: 23%;
     p{
@@ -349,7 +341,7 @@
     }
 }
 @media (min-width:1000px)and(max-width:1200px){
-  // height: 550px;\
+  
   height: 730px;
   width: 23%;
   h2{
@@ -368,7 +360,7 @@
   }
 }
 @media(min-width:$screen-md-min)and(max-width:999px){
-  // height: 550px;\
+  
   height: 700px;
   width: 23%;
   h2{
@@ -483,43 +475,30 @@
   }
   }
  
-
-//   img{
-//     width: 25%;
-// }
-  //  @media (min-width:)
   margin-bottom: $sc-margin-lv2;
 }
 .card-content-1-img2{
-//  @extend .card-content-1-img1;
-// .card-content-1-img1{
+
   @media (min-width:993px){
     img{
       width: 23%;
   }
   }
   @media (min-width:$screen-sm-min)and(max-width:$screen-md-min){
-  //   img{
-  //     width: 20%;
-  // }
+  
   width: 40%;
   }
   @media (max-width:$screen-sm-min){
     img{
-      // width: 63px;
-      // height: 38px;
       width: 50px;
       height: 40px;
-  }
+    }
   }
  
 
-//   img{
-//     width: 25%;
-// }
-  //  @media (min-width:)
+
   margin-bottom: $sc-margin-lv2;
-// }
+
 }
 .card-content-1-img3{
   @extend .card-content-1-img2;
@@ -658,14 +637,12 @@
      
       @media (min-width:993px){
         img{
-          // width: 26%;
+         
           width: 16%;
       }
       }
       @media (min-width:$screen-sm-min)and(max-width:$screen-md-min){
-      //   img{
-      //     width: 20%;
-      // }
+     
       width: 30%;
       }
       margin-bottom: $sc-margin-lv2;
@@ -679,14 +656,12 @@
    .card-content-1-img21{
     @media (min-width:993px){
       img{
-        // width: 26%;
+        
         width: 18%;
     }
     }
     @media (min-width:$screen-sm-min)and(max-width:$screen-md-min){
-    //   img{
-    //     width: 20%;
-    // }
+    
     width: 30%;
     }
     @media (max-width:$screen-sm-min){
@@ -700,7 +675,7 @@
    .card-content-1-img41{
     @media (min-width:993px){
       img{
-        // width: 22%;
+      
         width: 20%;
     }
     }
@@ -709,12 +684,10 @@
       height: 42px;
     }
     @media (min-width:$screen-sm-min)and(max-width:$screen-md-min){
-    //   img{
-    //     width: 20%;
-    // }
+    
     width: 25%;
     }
-    // @media (min-width:780px)
+   
       margin-bottom: $sc-margin-lv2;
    }
 
@@ -730,20 +703,18 @@
 	}
  .about-us-button12-login{
 	 @extend .col-sm-6;
-	//  width: 65%;
-  //  width: 100%;
+
   @media (min-width:$screen-sm-min)and (max-width:$screen-md-min){
-    // margin-right: $sc-margin-lv2*2;
+   
     width: 203px;
     height: 43.02px;
   }
   @media (min-width:$screen-md-min){
-    // margin-right: $sc-margin-lv2*2;
-    // width: 35%;
+   
     width: 203px;
     height: 43.02px;
   }
-	//  height:50px;
+	
 	 border:0.3px solid #F58331;
 	 border-radius: 9px;
 	 float:left;
@@ -761,7 +732,6 @@
 	
    .about-us-button12-login a{
 	 font-family:$sc-font-family;
-	//  font-size:16px;
 	 color:#fff;
 	 text-decoration:none;
    @media (max-width:767px){
@@ -773,22 +743,16 @@
 	 position:relative;
 	 width: 100%;
 	 display: inline-block;
-  //  @media(max-width:767px){
-  //   font-size: 17.09px;
-  //  font-weight: lighter;
-  //   line-height:50px;
-  // }
+ 
   @media(min-width:$screen-sm-min){
     font-size: 20.04px;
-    // line-height: 35px;
+    
     padding: 2%;
     font-weight: lighter;
   }
 }
 
-   // a{
-   //     color: $orange;
-   // }
+  
    .about-us-eff-12-login{
 	 width: 100%;
 	 height:50px;
@@ -824,7 +788,7 @@
 .location-heading-text-content-component-login{
 	padding: 2%;
 	height: 500px;
-	@media(max-width:$screen-sm-min){
+	@media(max-width:767px){
 	   height: auto;
 	   margin-bottom: $sc-margin-lv2*2;
 	   p{
@@ -833,9 +797,22 @@
 		 margin-bottom: 20px;
 		 font-size: 18px;
 		 padding-right: 5%;
+     font-weight: lighter;
 	   }
 	}
-	@media (min-width:$screen-sm-min){
+  @media(min-width:$screen-sm-min) and (max-width:$screen-md-min){
+		height: 600px;
+		margin-bottom: $sc-margin-lv2*2;
+		p{
+	   
+		color: #222222;
+		  margin-bottom: 20px;
+		  font-size: 18px;
+		  padding-right: 5%;
+		font-weight: lighter;
+		}
+	  }
+	@media (min-width:$screen-md-min){
 	 height: 600px;
 	 margin-bottom: $sc-margin-lv2*2;
 	 p{
@@ -860,7 +837,7 @@
 	  .heading-2-location-login{
 	   font-size: 28px;
      color: #222222;
-	   font-weight: 400;
+	   font-weight: bold;
 	  
 	  }
 	   
@@ -890,7 +867,7 @@
     
 }
 .sydney-office-content1-login{
-//  height: 500px;
+
  padding: 2%;
  p{
   color: #222222;
@@ -1001,8 +978,7 @@
   }
 }
 @media (min-width:1200px){
-//  height: 240px;
-//  width: 300px;
+
 width: 369px;
 height: 221px;
 img{
@@ -1022,7 +998,7 @@ width: 100%;
 .mailborney-office-content1-login{
  padding: 2%;
  p{
-	//  padding-right: 53%;
+
 	 font-size: 13px;
 	 margin-top: $sc-margin-lv2*2;
    color: #222222;
@@ -1134,8 +1110,7 @@ width: 100%;
   }
 }
 @media (min-width:1200px){
-//  width: 300px;
-// height: 240px;
+
 width: 369px;
 height: 221px;
 img{
@@ -1155,16 +1130,16 @@ img{
 
 @media(max-width:$screen-xs-max){
   .value-add-service-1st-card-content-top-content{
-    .card-content1{background:none;
+    .card-content1{
       h2{font-size: 21px; font-weight: bold;}
       a{
         font-weight: bold;
       }
     
     }
-    .card-content1-1{background:none;  h2{font-size: 21px; font-weight: bold;}}
+    .card-content1-1{ h2{font-size: 21px; font-weight: bold;}}
   }
   .credit-facilities-all-content{
-    .card-content11{background:none;   h2{font-size: 21px; font-weight: bold;}}
+    .card-content11{   h2{font-size: 21px; font-weight: bold;}}
   }
 }

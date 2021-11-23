@@ -91,7 +91,7 @@
     },
     "nsdeployPath": ".nsdeploy",
     "_": [
-        "theme:local"
+        "theme:fetch"
     ],
     "product": "gulp",
     "$0": "C:\\Program Files\\nodejs\\node_modules\\gulp-cli\\bin\\gulp.js",
@@ -621,7 +621,8 @@
                             "Modules/LandingPages/Templates/become_a_partner.tpl",
                             "Modules/GetInTouch/Templates/get_in_touch.tpl",
                             "Modules/ValueAddServices/Templates/value_add_services.tpl",
-                            "Modules/LandingPages/Templates/new_layout.tpl"
+                            "Modules/LandingPages/Templates/new_layout.tpl",
+                            "Modules/ValueAddServices/Templates/value_add_service.tpl"
                         ]
                     },
                     "myaccount": {
@@ -957,7 +958,8 @@
                             "Modules/LandingPages/Templates/become_a_partner.tpl",
                             "Modules/GetInTouch/Templates/get_in_touch.tpl",
                             "Modules/ValueAddServices/Templates/value_add_services.tpl",
-                            "Modules/LandingPages/Templates/new_layout.tpl"
+                            "Modules/LandingPages/Templates/new_layout.tpl",
+                            "Modules/ValueAddServices/Templates/value_add_service.tpl"
                         ]
                     },
                     "checkout": {
@@ -1258,7 +1260,8 @@
                             "Modules/LandingPages/Templates/become_a_partner.tpl",
                             "Modules/GetInTouch/Templates/get_in_touch.tpl",
                             "Modules/ValueAddServices/Templates/value_add_services.tpl",
-                            "Modules/LandingPages/Templates/new_layout.tpl"
+                            "Modules/LandingPages/Templates/new_layout.tpl",
+                            "Modules/ValueAddServices/Templates/value_add_service.tpl"
                         ]
                     }
                 }

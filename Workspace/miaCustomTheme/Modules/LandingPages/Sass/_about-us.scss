@@ -18,7 +18,7 @@
      width: 1170px;
    }
     margin-top:$sc-margin-lv4;
-    // position: absolute;
+    
 }
 #about{
   @extend .row;
@@ -251,7 +251,7 @@
 }
 
 .about-us-cms-area-1-paragraph{
-    // margin-top:40px;
+    
     .about-us-cms-area-1-paragraph1{
       p{
        
@@ -376,8 +376,7 @@ h6.about-us-cms-area-table-h6{
 .about-us-cms-area-table-emp{
   width: 110px;
   background-color: $orange;
-  // height: 290px;
-  // margin-top: 80px;
+ 
   height: 280px;
   margin-top: 85px;
   margin-left: -24px;
@@ -811,10 +810,6 @@ p{
         margin-bottom: 10px;
       }
       .graph-text-content{
-        //
-       
-        // font-family: 'Poppins', sans-serif;
-       
         font-size: 16px;
         font-weight:lighter;
       }
@@ -1016,9 +1011,8 @@ p{
   // for medium mobile device 
   @media (min-width:400px) and (max-width:450px){
     .about-us-cms-area-5 .about-us-cms-area-5-imgtab .about-us-cms-area-5-img1-top {
-      // padding-bottom: 15px;
+   
       text-align: left;
-      // padding-left: 40px;
       padding: 0 20px 0 24px;
   }
   }

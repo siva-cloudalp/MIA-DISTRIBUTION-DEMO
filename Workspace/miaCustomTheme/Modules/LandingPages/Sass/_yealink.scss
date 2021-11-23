@@ -140,7 +140,7 @@ a .vendors-text-underline{
       position: relative;
       height: 500px;
       padding: 2%;
-      // margin-left:$sc-margin-lv2;      
+           
       .vendors-icon{
           margin-bottom: $sc-margin-lv2;
           margin-top: $sc-margin-lv2;
@@ -170,8 +170,6 @@ a .vendors-text-underline{
      }
      @media (max-width:$screen-md){
           height: auto;
-          // margin: 10px;
-
      }
   }
 }
