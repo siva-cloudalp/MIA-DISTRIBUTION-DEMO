@@ -21,7 +21,7 @@
 
 
     <div class="register-page-redirect-link">
-			<p class="not-a-partner">Not a Partner? <a class="login-redirect-register" data-touchpoint="login" data-hashtag="login-register"> Click Here</a> To start Your Journey </p>
+			<p class="not-a-partner">Not a Partner? <a class="login-redirect-register" data-touchpoint="login" data-hashtag="register"> Click Here</a> To start Your Journey </p>
 		</div>
  
 </section>

@@ -35,6 +35,10 @@
 	<div class="container-recaptcha">
         <div class="g-recaptcha" id="recaptcha-anchor" data-sitekey="6LcJIFAdAAAAAL7dUX5_yRJI7I4arROEY8ChQpEQ"></div>
     </div>
+
+	<div id="alert-placeholder" >
+		<p class="alert-type" data-id="alert-type" ></p>
+	</div>
 		<div class="login-register-login-form-controls-group login-button1 desktop-site" data-type="form-login-action">
              <div class="login-eff-1"></div>
 			<button type="submit" class="login-register-login-submit anchor-1" data-action="login-button">
@@ -52,9 +56,7 @@
 		</div>
 
 		
-         <div id="alert-placeholder" >
-				    <p class="alert-type" data-id="alert-type" data-type="alert-placeholder"></p>
-				 </div>
+         
             
 	</fieldset>
 </form>
