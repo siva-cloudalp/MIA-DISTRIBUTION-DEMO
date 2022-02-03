@@ -37,31 +37,13 @@ const ItemRelationsRelatedItemView = BackboneView.extend({
     // @return {Void}
     initialize: function(options) {
         BackboneView.prototype.initialize.apply(this, arguments);
-        // console.log("This",this)
-        // console.log("options",options)
-        // console.log("item Relations ",this)
+        console.log("This",this)
+        console.log("options",options)
         // console.log("this parent application ", this.parentView)
 
         // this.application = this.parentView.options.application
-    
 
 
-// const product = new ProductModel({
-//             item: this.model,
-
-//         });
-
-//         const customoptions =    this.model.getitemoptionscustom();
-//         console.log("Customoptions", customoptions)
-
-//         _.each(customoptions,function(custom:any){
-//             if(custom.isMandatory){
-//                 product.setOption(custom.cartOptionId, custom.values[0].internalid)
-//             }
-//         })
-//         this.model = product.get('item')
-//         console.log("this.model -",this.model)
-//         console.log("product -", product)
     },
     events:{
         'click [data-action="changethumbnail"]' : 'thumbnailchange'
@@ -76,12 +58,12 @@ const ItemRelationsRelatedItemView = BackboneView.extend({
     const link:any = _.findWhere(colrs, "url")
     const finalurl =    link.hasOwnProperty('urls')? link.urls[0].url : link[0].url;
     
-    // console.log("currentTarget ",e.currentTarget);
+    console.log("currentTarget ",e.currentTarget);
 
-    // console.log("parentuntil ",$(e.currentTarget).parentsUntil(".item-relations-cell").parent())
-    // console.log("parentuntil ",$(e.currentTarget).parentsUntil(".recently-viewed-cell-item-cell").parent())
-    // console.log("parentuntil ",$(e.currentTarget).parentsUntil(".item-relations-cell").parent().hasClass('item-relations-cell'))
-    // console.log("parentuntil ",$(e.currentTarget).parentsUntil(".recently-viewed-cell-item-cell").parent())
+    console.log("parentuntil ",$(e.currentTarget).parentsUntil(".item-relations-cell").parent())
+    console.log("parentuntil ",$(e.currentTarget).parentsUntil(".recently-viewed-cell-item-cell").parent())
+    console.log("parentuntil ",$(e.currentTarget).parentsUntil(".item-relations-cell").parent().hasClass('item-relations-cell'))
+    console.log("parentuntil ",$(e.currentTarget).parentsUntil(".recently-viewed-cell-item-cell").parent())
 
         if($(e.currentTarget).parentsUntil(".item-relations-cell").parent().hasClass('item-relations-cell')){
             $(e.currentTarget).parentsUntil(".item-relations-cell").parent().find(".item-relations-related-item-thumbnail").html(
@@ -146,16 +128,8 @@ const ItemRelationsRelatedItemView = BackboneView.extend({
                         quantity: this.model.get('_minimumQuantity', true),
                         mybutton:true // for button template customisation
                     });
-                    try {
-                        if(this.model.attributes.itemoptions_detail){
-                        this.itemwithoptions = true;
-                    }
-                    } catch (error) {
-                        // console.log('error', error)
-                    }
-                    
-                    // console.log("addtocart THIS",this)
-                    // console.log("quantity ", this.model.get("_minimumQuantity"))
+                    console.log("addtocart THIS",this)
+                    console.log("quantity ", this.model.get("_minimumQuantity"))
             return new CartAddToCartButtonView({
                 model: product,
                 application: this.parentView.options.application, //this.options.application
@@ -168,7 +142,7 @@ const ItemRelationsRelatedItemView = BackboneView.extend({
                 quantity: this.model.get('_minimumQuantity', true),
                 mybutton:true, // for button template customisation
             });
-            // console.log("product option THIS.options ", this.options)
+            console.log("product option THIS.options ", this.options)
             return new ProductDetailsOptionsSelectorView({
                 model: product, 
                 application: this.parentView.options.application, //this.options.application,
@@ -188,9 +162,8 @@ const ItemRelationsRelatedItemView = BackboneView.extend({
             const product = new ProductModel({
                 item: this.model,
                 quantity: this.model.get('_minimumQuantity', true)
-                
             });
-            // console.log("addtoproductlist this.options ", this.options)
+            console.log("addtoproductlist this.options ", this.options)
             return new ProductDetailsAddToProductListView({
                 model: product,
                 application: this.parentView.options.application, //this.options.application
@@ -214,13 +187,9 @@ const ItemRelationsRelatedItemView = BackboneView.extend({
     // @method getContext 
     // @returns {ItemViews.RelatedItem.View.Context}
     getContext: function() {
-        // console.log("related this ",this)
-        // console.log("ITEM WITH OPTIONS ",this.itemwithoptions)
-        // console.log("ITEM WITH MODEL OPTIONS ",this.model.get('itemoptions_detail'))
+        console.log("related this ",this)
         // @class ItemViews.RelatedItem.View.Context
         return {
-            url : this.model.get("_url"),
-            itemwithoptions: this.model.get('itemoptions_detail') || this.model.get('itemoptions_detail') == "undefined", //this.itemwithoptions,
             iscustom : true,
             // @property {String} itemURL
             itemURL: this.model.getFullLink(),
